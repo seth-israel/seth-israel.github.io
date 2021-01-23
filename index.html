@@ -2,105 +2,227 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Seth's Website</title>
+<title>Seth Israel</title>
+<link rel="icon" href="favicon.png">
 <style>
 body {
-  margin: 1em;
-  background: #e0f542;
+  padding: 1em 1em 1em 1em;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
-
-#title {
+h2 {
+  font-family: Times, serif;
+  font-weight: 500;
+  text-align: center;
   font-size: 2em;
+  line-height: 0.5;
   text-decoration: underline;
-  background: black;
-  display: inline-block;
 }
-
-#title:hover {
-  background: none;
-}
-
-p {
-  background: black;
-  display: inline-block;
-}
-
-p:hover {
-  background: none;
-}
-
-img {
-  max-width: 50vw;
-  max-height: 75vh;
-  margin: 1em;
+.footer {
+  text-align: center;
+  width: 25vw;
   display: block;
+  margin: 0 auto;
+  font-size: 12px;
+  border-top: 1px solid lightgrey;
+  margin-top: 2em;
+  padding: 10px;
 }
-
+img {
+  max-width: 200px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  width: 75vw;
+  margin: 0 auto;
+}
+.grid .grid-container {
+  position: relative;
+  background: white;
+  border: 1px solid grey;
+  height: 300px;
+  max-height: 300px;
+  min-height: 300px;
+  overflow: hidden;
+  overflow-y: auto;
+  line-height: 1.2;
+  border-radius: px;
+}
 a {
+  text-decoration: none;
+  border-bottom: 1px solid grey;
+  display: block;
+  padding: 3px;
   color: black;
-  background: black;
-  text-decoration: underline;
 }
-
 a:visited {
-  color: black;
-  text-decoration: underline;
+   color: initial;
 }
-
-a:hover {
-  background: none;
+.header {
+  display: block;
+  padding: 3px;
+  background: lightgrey;
 }
-
-a:active {
-  color: black;
+a.bottom {
+  display: inline-block;
+  border-bottom: none;
+  line-height: 0.5;
+  color: green;
 }
-
-audio {
-  margin: 1em;
+@media (max-width: 1000px) {
+   .grid {
+     grid-template-columns: repeat(2, 1fr);
+   }
+   .footer {
+     width: 40vw;
+     font-size: 11px;
+   }
+}
+@media (max-width: 600px) {
+   .grid {
+     grid-template-columns: repeat(1, 1fr);
+  }
+   .footer {
+     width: 50vw;
+     font-size: 10px;
+   }
 }
 </style>
 </head>
 
 <body>
-<div id="title">Seth's Website</div>
-<img src="assets/zine1.png" alt="scan of zine page; pencil on purple construction paper with red tape">
-<img src="assets/time.png" alt="Ryuichi Sakamoto show music technology; reads 'this is time. i'm making a loop.'">
-<br>
-<a href="https://philosophers-riding-bicycles.tumblr.com">https://philosophers-riding-bicycles.tumblr.com</a>
-<br>
-<a href="https://seth-israel.tumblr.com">https://seth-israel.tumblr.com</a>
-<br>
-<audio controls>
-  <source src="assets/Nahanton Park 12-19-20.m4a" type="audio/mpeg">
-</audio>
-<img src="assets/plane.gif" alt="plane gif" width="400">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wwyFyTbkT9w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<img src="assets/Nausea.png" alt="Nausea">
-<img src="assets/rubtwo.jpeg" alt="rub two">
-<img src="assets/ozu.png" alt="Ozu screen grab">
-<img src="assets/sky.gif" alt="sky gif" width="400">
-<img src="assets/unintelligible.jpg" alt="AR">
-<img src="assets/milk_ranch_2.jpg" alt="Mount Wilson camera">
-<img src="assets/murielfuji-1.jpeg" alt="Muriel Fuji">
-<img src="assets/nina-canal-the-kitchen.png" alt="Nina Canal">
-<img src="assets/minivan.png" alt="Working on a minivan somehwere in Russia">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NChqEEz31eE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
-<iframe src="https://player.vimeo.com/video/159730366?transparent=0" width="480" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<img src="assets/wing.png" style="background: white;" alt="monarch butterfly wing" width="100">
-<img src="assets/IMG_8389.JPG">
-<img src="assets/watercrop.gif" alt="water gif" width="300" height="100">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MuvkWkhblDI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/azuVUDZrAu4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
-<img src="assets/rocks.png" alt="rocks">
-<img src="assets/space-hearts.jpg" alt="space hearts">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SoTcx71TB2w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
-<img src="assets/sheep.png" alt="sheep">
-<img src="assets/runningtoprom.png" alt="Napoleon Dynamite running to prom">
-<img src="assets/cutout.png" alt="cutout of tree">
-<img src="assets/Herzog.png" alt="advice from Werner Herzog">
-<a href="books.html">Reading</a><br>
-<a href="chairs/index.html">Chairs</a><br>
-<a href="archive.html">Archive</a><br><br>
-<p>Last updated: January 13, 2021</p>
+<h2>Seth Israel</h2>
+<div class="grid">
+ <div class="grid-container">
+  <div class="header">Books I've read from April 2020 - present (in reverse chronological order)</div>
+   <a><i>Capitalist Realism</i>, Mark Fisher</a>
+   <a><i>The Crying of Lot 49</i>, Thomas Pynchon</a>
+   <a><i>Of Walking in Ice</i>, Werner Herzog</a>
+   <a><i>Interpreter of Maladies</i>, Jhumpa Lahiri</a>
+   <a><i>A Supposedly Fun Thing I'll Never Do Again</i>, David Foster Wallace</a>
+   <a><i>As Consciousness Is Harnessed to Flesh</i>, Susan Sontag</a>
+   <a><i>Sin: Selected Poems of Forugh Farrokhzad</i>, trans. Sholeh Wolpé</a>
+   <a><i>Illness as Metaphor and AIDS and Its Metaphors</i>, Susan Sontag</a>
+   <a><i>Transcendental Style in Film</i>, Paul Schrader</a>
+   <a><i>We Need New Names</i>, NoViolet Bulawayo</a>
+   <a><i>Selected Poems</i>, Robert Creeley</a>
+   <a><i>Collected Early Poems of Ezra Pound</i>, ed. Michael John King</a>
+   <a><i>Death in Midsummer and Other Stories</i>, Yukio Mishima</a>
+   <a><i>Reborn</i>, Susan Sontag</a>
+   <a><i>Like Life</i>, Lorrie Moore</a>
+   <a><i>Nausea</i>, Jean-Paul Sartre</a>
+   <a><i>Season of Migration to the North</i>, Tayeb Salih</a>
+   <a><i>A Grain of Wheat</i>, Ngũgĩ wa Thiong'o</a>
+   <a><i>Sundiata</i>, DT Niane</a>
+   <a><i>Death and the King's Horseman</i>, Wole Soyinka</a>
+   <a><i>Arrow of God</i>, Chinua Achebe</li>
+   <a><i>Taipei</i>, Tao Lin</a>
+   <a><i>Things Fall Apart</i>, Chinua Achebe</a>
+   <a><i>Bicycle Diaries</i>, David Byrne</a>
+   <a><i>Air Guitar</i>, Dave Hickey</a>
+   <a><i>The Marriage Plot</i>, Jeffrey Eugenides</a>
+   <a><i>My Bloody Valentine's Loveless</i>, Mike McGonigal</a>
+   <a><i>Hold On To Your Dreams</i>, Tim Lawrence</a>
+ </div>
+
+  <div class="grid-container">
+   <div class="header">Recommend sites</div>
+    <a href="https://didier.works/">https://didier.works/</a>
+    <a href="https://www.joeyhan.com/">https://www.joeyhan.com/</a>
+    <a href="https://gossipsweb.net/">https://gossipsweb.net/</a>
+    <a href="http://criticaltheoryindex.org/">http://criticaltheoryindex.org/</a>
+    <a href="http://petals.network/">http://petals.network/</a>
+    <a href="https://special.fish/">https://special.fish/</a>
+    <a href="https://teropa.info/musicmouse/">https://teropa.info/musicmouse/</a>
+    <a href="https://publishsomething.online/">https://publishsomething.online/</a>
+    <a href="https://sundaysites.cafe/">https://sundaysites.cafe/</a>
+    <a href="https://hopelesslosers.tripod.com/yojreview.html">https://hopelesslosers.tripod.com/yojreview.html</a>
+    <a href="https://html.energy/">https://html.energy/</a>
+    <a><em>Send me your URI and I'll add it</em></a>
+  </div>
+
+ <div class="grid-container">
+  <div class="header">Other places on the web</div>
+   <a href="https://www.are.na/seth-israel/">Are.na</a>
+   <a href="https://github.com/seth-israel">GitHub</a>
+   <a href="https://soundcloud.com/sethisrael">Soundcloud</a>
+ </div>
+
+
+ <div class="grid-container">
+  <div class="header">Current tracks</div>
+   <a href="https://www.youtube.com/watch?v=SoTcx71TB2w">Necessaries - Driving and Talking at the Same Time</a>
+   <a href="https://www.youtube.com/watch?v=mSeIh9rmEUs">Roy Orbison - In Dreams</a>
+   <a href="https://www.youtube.com/watch?v=NGVmZyY1QR4">Стекловата - Просто осень</a>
+   <a href="https://www.youtube.com/watch?v=HeXX58c-lEk&feature">Moses - We Just</a>
+   <a href="https://www.youtube.com/watch?v=OMlBLNqJUuA">Planet Ha Ha - Home</a>
+ </div>
+
+ <div class="grid-container">
+  <div class="header">Films</div>
+   <a href="https://youtu.be/azuVUDZrAu4">Study II (Point Judith)</a>
+   <a href="https://youtu.be/MuvkWkhblDI">Study I (Providence)</a>
+   <a href="https://youtu.be/x2Y216eIAbo">You there</a>
+   <a href="https://youtu.be/wwyFyTbkT9w">Planes</a>
+   <a href="https://youtu.be/MMOyNwJ6hm4">What time is interstitial</a>
+ </div>
+
+ <div class="grid-container">
+  <div class="header">Re-watchlist</div>
+   <a>Faces (1968)</a>
+   <a>Easy Rider (1969)</a>
+   <a>The Last Movie (1971)</a>
+   <a>Permanent Vacation (1980)</a>
+   <a>Stranger Than Paradise (1984)</a>
+   <a>Good Time (2017)</a>
+ </div>
+
+ <div class="grid-container">
+  <div class="header">Projects</div>
+     <a href="https://seth-israel.tumblr.com/">Scans</a>
+     <a href="https://five-seven.glitch.me/">Five Seven Radio</a>
+ </div>
+
+ <div class="grid-container">
+  <div class="header">My webspaces</div>
+   <a href="https://seths-website.glitch.me/">https://seths-website.glitch.me/</a>
+   <a href="https://marine-snow.glitch.me/">https://marine-snow.glitch.me/</a>
+   <a href="https://philosophers-riding-bicycles.tumblr.com/">https://philosophers-riding-bicycles.tumblr.com/</a>
+   <a href="https://blog-sort-of.tumblr.com/">https://blog-sort-of.tumblr.com/</a>
+   <a href="https://fallen----leaves.tumblr.com/">https://fallen----leaves.tumblr.com/</a>
+ </div>
+
+ <div class="grid-container">
+  <div class="header">Mixes</div>
+   <a href="2020-8-31.mp3">2020-8-31.mp3</a>
+ </div>
+
+ <div class="grid-container">
+  <div class="header">Writing</div>
+   <a href="https://www.theindy.org/2230">Community as pedagogy</a>
+   <a href="https://www.theindy.org/2099">rub two</a>
+   <a href="https://www.theindy.org/1861">Stereo</a>
+   <a href="https://www.theindy.org/1781">But No Let's go Big dog</a>
+ </div>
+
+ <div class="grid-container">
+  <div class="header">Misc.</div>
+   <a href="chairs/index.html">Chairs</a>
+   <a href="2020-12-19.m4a">2020-12-19.m4a</a>
+ </div>
+
+ <div class="grid-container">
+  <div class="header">Archive</div>
+   <a href="v5.html">Winter 2021</a>
+   <a href="v4.html">Fall 2020</a>
+   <a href="v3.html">Summer 2020</a>
+   <a href="v2.html">Spring 2020</a>
+   <a href="v1.html">Winter 2020</a>
+ </div>
+</div>
+
+<div class="footer">Last updated January 23, 2021 • Written in<a class="bottom" target="_break" href="https://html.energy/">HTML</a></div>
+
 </body>
 </html> 

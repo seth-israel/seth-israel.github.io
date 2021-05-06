@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nuns polyptych</title>
+<style>
+
+img {
+  width: 100%;
+  display: block;
+  padding: 0px;
+  margin: 0px;
+  line-height: 0;
+}
+
+img.one {
+  filter: hue-rotate(45deg) saturate(5);
+}
+
+img.two {
+  filter: hue-rotate(90deg) saturate(5);
+}
+
+img.three {
+  filter: hue-rotate(135deg) saturate(5);
+}
+
+img.four {
+  filter: hue-rotate(180deg) saturate(5);
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0px;
+  margin: 0 auto;
+  width: 60vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+</style>
+</head>
+
+<body>
+<div class="grid">
+ <img class="one" src="photos/3.jpg">
+ <img class="two" src="photos/3.jpg">
+ <img class="three" src="photos/3.jpg">
+ <img class="four" src="photos/3.jpg">
+</div>
+</body>
+</html> 

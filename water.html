@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Water polyptych</title>
+<style>
+
+img {
+  width: 100%;
+  display: block;
+  padding: 0px;
+  margin: 0px;
+  line-height: 0;
+}
+
+img.one {
+  filter: hue-rotate(45deg) saturate(2);
+}
+
+img.two {
+  filter: hue-rotate(60deg) saturate(2);
+}
+
+img.three {
+  filter: hue-rotate(75deg) saturate(2);
+}
+
+img.four {
+  filter: hue-rotate(90deg) saturate(2);
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0px;
+  margin: 0 auto;
+  width: 60vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: opacity(60%) invert(100%) hue-rotate(180deg);
+}
+
+.grid2{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0px;
+  margin: 0 auto;
+  width: 60vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: opacity(60%) invert(100%) hue-rotate(180deg);
+  z-index: 1;
+}
+</style>
+</head>
+
+<body>
+<div class="grid2">
+ <img class="one" src="heads.png">
+ <img class="two" src="heads.png">
+ <img class="three" src="heads.png">
+ <img class="four" src="heads.png">
+
+</div>
+
+<div class="grid">
+ <img class="one" src="water.png">
+ <img class="two" src="water.png">
+ <img class="three" src="water.png">
+ <img class="four" src="water.png">
+</div>
+</body>
+</html> 

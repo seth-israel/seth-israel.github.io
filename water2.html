@@ -4,7 +4,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Water polyptych</title>
 <style>
-
 img {
   width: 100%;
   display: block;
@@ -59,24 +58,19 @@ img.four {
 .tooltip {
   position: relative;
   display: inline-block;
-  font-family: Helvetica, arial, sans-serif;
-  background: black;
-  color: white;
 }
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 150px;
-  border: 1px solid black;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  border: 1px solid grey;
   text-align: center;
-  padding: 15px;
-  font-size: 9px;
+  padding: 5px;
+  font-size: 10px;
   text-align: left;
-  top: 100%;
-  left: 100%;
-  margin-left: -20px;
-  margin-top: 5px;
-  color: black;
+  width: 300px;
+  top: -15px;
+  left: 105%;
   position: absolute;
   z-index: 1;
 }
@@ -86,18 +80,14 @@ img.four {
 }
 
 .tooltip:hover {
-  background: white;
-  color: black;
   cursor: help;
+  background: white;
 }
 </style>
 </head>
 
 <body>
-
-<div class="tooltip">[ i ]
-  <span class="tooltiptext">this image is mildly 'holographic.' depending on the size of your browser or the angle of your vision to your monitor, the image will change (slightly).</span>
-</div>
+<div class="tooltip">
 
 <div class="grid">
  <img class="one" src="heads.png">
@@ -111,6 +101,8 @@ img.four {
  <img class="two" src="water.png">
  <img class="three" src="water.png">
  <img class="four" src="water.png">
+</div>
+  <span class="tooltiptext">Images from <i>The Cinema as Graphic Art</i> (1959) by Vladimir Nilsen</span>
 </div>
 </body>
 </html> 

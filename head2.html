@@ -4,7 +4,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Head polyptych</title>
 <style>
-
 img {
   height: 100%;
   display: block;
@@ -55,10 +54,40 @@ img.four {
   z-index: 1;
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  border: 1px solid grey;
+  text-align: center;
+  padding: 5px;
+  font-size: 10px;
+  text-align: left;
+  width: 300px;
+  top: -15px;
+  left: 105%;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip:hover {
+  cursor: help;
+  background: white;
+}
 </style>
 </head>
 
 <body>
+<div class="tooltip">
+
 <div class="grid2">
  <img class="one" src="head.png">
  <img class="two" src="head.png">
@@ -70,6 +99,8 @@ img.four {
  <img class="one" src="head2.png">
  <img class="two" src="head2.png">
  <img class="three" src="head2.png">
+</div>
+  <span class="tooltiptext">Images from <i>The Cinema as Graphic Art</i> (1959) by Vladimir Nilsen</span>
 </div>
 </body>
 </html> 

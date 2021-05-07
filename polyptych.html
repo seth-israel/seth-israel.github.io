@@ -8,18 +8,97 @@
 body {
   padding: 1em 1em 1em 1em;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: 10px;
+  font-size: 12px;
+}
+
+a:link {
+ text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: initial;
+}
+
+table, th, td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+}
+
+table {
+  width: 20vw;
+  margin: 0 auto;
+}
+
+td {
+  padding: 15px;
+  text-align: center;
+  background: #d6ff30;
+  width: 33%;
+}
+
+th {
+  background: lightgrey;
+}
+
+td.info {
+  text-align: left;
+  background: white;
+}
+
+td.date {
+  background: white;
+}
+
+td.source {
+  background: white;
+}
+
+td:hover {
+  background: #ffffff;
 }
 </style>
 </head>
 
 <body>
- <a href="nuns.html">001</a><br>
- <a href="clouds.html">002</a><br>
- <a href="trucks.html">003</a><br>
- <a href="head.html">004</a><br>
- <a href="head2.html">005</a><br>
- <a href="water.html">006</a><br>
- <a href="water2.html">007</a><br>
+ <table>
+  <tr>
+   <th>#</th>
+   <th>date</th>
+  <tr>
+    <td><a href="nuns.html">001</a></td>
+    <td class="date">May 6, 2021</td>
+  </tr>
+  <tr>
+    <td class="brown"><a href="clouds.html">002</a></td>
+    <td class="date">May 6, 2021</td>
+  </tr>
+  <tr>
+    <td class="blue"><a href="trucks.html">003</a></td>
+    <td class="date">May 6, 2021</td>
+  </tr>
+  <tr>
+    <td><a href="head.html">004</a></td>
+    <td class="date">May 6, 2021</td>
+  </tr>
+  <tr>
+    <td><a href="head2.html">005</a></td>
+    <td class="date">May 6, 2021</td>
+  </tr>
+  <tr>
+    <td><a href="water.html">006</a></td>
+    <td class="date">May 6, 2021</td>
+  </tr>
+  <tr>
+    <td><a href="water2.html">007</a></td>
+    <td class="date">May 6, 2021</td>
+  </tr>
+  <tr>
+   <td class="info" colspan="2">
+   These webpages/images are made by applying CSS to images (view the source for specifics). The photos are mine unless the source is otherwise specified.
+   </td>
+  </tr>
+</table>
+
 </body>
 </html> 

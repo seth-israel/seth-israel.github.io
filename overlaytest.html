@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Albers</title>
+<style>
+.grid {
+  display: grid;
+  overflow: auto;
+  white-space: nowrap;
+  height: 30vw;
+}
+.grid .box {
+    position: relative;
+    display: block;
+    font-family: var(--courier);
+    font-size: var(--body-font-size);
+    width: 30vw;
+    height: 30vw;
+    padding: 10px;
+    margin: 1vw 0 1vw 0;
+    text-decoration: none;
+    line-height: 1.3em;
+}
+.grid .box3 {
+    position: relative;
+    display: block;
+    font-family: var(--courier);
+    font-size: var(--body-font-size);
+    width: 20vw;
+    height: 20vw;
+    padding: 10px;
+    margin: 6vw 0 6vw 0;
+    text-decoration: none;
+    line-height: 1.3em;
+}
+.grid .box2 {
+    position: relative;
+    display: block;
+    font-family: var(--courier);
+    font-size: var(--body-font-size);
+    width: 25vw;
+    height: 25vw;
+    padding: 10px;
+    margin: 2.5vw 0 2.5vw 0;
+    text-decoration: none;
+    line-height: 1.3em;
+}
+.outer {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  place-items: center;
+}
+.outer > * {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+.outer .below {
+  z-index: 3;
+}
+.outer .middle {
+  z-index: 2;
+}
+.outer .top {
+  z-index: 1;
+}
+/* width */
+::-webkit-scrollbar {
+  filter: opacity(0%);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  filter: opacity(0%);
+}
+</style>
+</head>
+ 
+<body>
+ <div class="outer">
+ <div class="grid top">
+  <div class="box" style="background: green"></div>
+  <div class="box" style="background: blue"></div>
+  <div class="box" style="background: red"></div>
+ </div>
+ <div class="grid middle">
+  <div class="box3" style="background: grey"></div>
+  <div class="box3" style="background: black"></div>
+  <div class="box3" style="background: yellow"></div>
+ </div>
+ <div class="grid top">
+  <div class="box2" style="background: orange"></div>
+  <div class="box2" style="background: pink"></div>
+  <div class="box2" style="background: purple"></div>
+ </div>
+</div>
+</body>
+</html> 

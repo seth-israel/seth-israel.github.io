@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Albers</title>
+<style>
+body {
+  margin: 2em;
+}
+#vertcontainer {
+  width: 351px;
+  margin: 0 auto;
+  position: absolute;
+  top: 315%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.vert {
+  width: 350px;
+  height: 350px;
+  display: block;
+  filter: opacity(100%);
+  margin-bottom: 300px;
+}
+#horizcontainer {
+  width: 301px;
+  margin: 0 auto;
+  overflow: auto;
+  white-space: nowrap;
+  position: fixed;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.horiz {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  filter: opacity(100%);
+  margin-right: 200px;
+}
+#center {
+  display: block;
+  width: 400px;
+  height: 400px;
+  background-color: #756355;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* width */
+::-webkit-scrollbar {
+  filter: opacity(0%);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  filter: opacity(0%);
+}
+</style>
+</head>
+
+<body>
+
+<div id="center"></div>
+
+<div id="horizcontainer">
+
+<div class="horiz" style="background-color: #451e04;"></div>
+
+<div class="horiz" style="background-color: #ef041b;"></div>
+
+<div class="horiz" style="background-color: #ff9b37;"></div>
+
+<div class="horiz" style="background-color: #c28ca9;"></div>
+
+<div class="horiz" style="background-color: #023a79;"></div>
+
+<div class="horiz" style="background-color: #d8aa69;"></div>
+
+<div class="horiz" style="background-color: #e3e9e3;"></div>
+
+</div>
+
+<div id="vertcontainer">
+
+<div class="vert" style="background-color: #53362a;"></div>
+
+<div class="vert" style="background-color: #bd99bb;"></div>
+
+<div class="vert" style="background-color: #2878c7;"></div>
+
+<div class="vert" style="background-color: #637d32;"></div>
+
+<div class="vert" style="background-color: #86aecb;"></div>
+
+<div class="vert" style="background-color: #371a10;"></div>
+
+<div class="vert" style="background-color: #ffdada;"></div>
+
+</div>
+
+
+
+
+</body>
+</html> 

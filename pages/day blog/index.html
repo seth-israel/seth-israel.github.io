@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>day blog</title>
+<style>
+body {
+  margin: 1em;
+}
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 0.8em;
+  max-width: 1000px;
+  margin: 0.8em 0em;
+}
+#calendar a {
+  border: 1px solid #9198e5;
+  height: 80px;
+  padding: 0.8em;
+  text-decoration: none;
+  background: #bdbfde;
+  color: #9198e5;
+  text-align: left;
+  filter: opacity(60%) blur(2px);
+}
+#calendar a:hover {
+  filter: invert(100%);
+}
+#calendar a[href] {
+  filter: opacity(100%);
+}
+#calendar a[href]:hover {
+  filter: opacity(100%) invert(100%);
+}
+#calendar a.empty {
+  border: none;
+  background: none;
+}
+#month {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 20px;
+  border-bottom: 1px dotted black;
+  display: inline;
+}
+@media (max-width: 600px) {
+   #calendar {
+     grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 400px) {
+   #calendar {
+     grid-template-columns: repeat(1, 1fr);
+  }
+}
+</style>
+</head>
+ 
+<body>
+ <div id="month">June</div>
+ <div id="calendar">
+  <a></a>
+  <a></a>
+  <a href="2021/6/1.html">1</a>
+  <a>2</a>
+  <a>3</a>
+  <a>4</a>
+  <a>5</a>
+  
+  <a>6</a>
+  <a>7</a>
+  <a>8</a>
+  <a>9</a>
+  <a>10</a>
+  <a>11</a>
+  <a>12</a>
+
+  <a>13</a>
+  <a>14</a>
+  <a>15</a>
+  <a>16</a>
+  <a>17</a>
+  <a>18</a>
+  <a>19</a>
+
+  <a>20</a>
+  <a>21</a>
+  <a>22</a>
+  <a>23</a>
+  <a>24</a>
+  <a>25</a>
+  <a>26</a>
+
+  <a>27</a>
+  <a>28</a>
+  <a>29</a>
+  <a>30</a>
+  <a></a>
+  <a></a>
+  <a></a>
+ </div>
+</body>
+</html> 

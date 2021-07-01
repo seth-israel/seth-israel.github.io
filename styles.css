@@ -1,0 +1,97 @@
+body {
+  padding: 1em 1em 1em 1em;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+h2 {
+  font-family: Times, serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: 2em;
+  line-height: 0.5;
+  text-decoration: underline;
+}
+.footer {
+  text-align: center;
+  width: 25vw;
+  display: block;
+  margin: 0 auto;
+  font-size: 12px;
+  /border-top: 1px solid lightgrey;
+  margin-top: 10px;
+  padding: 10px;
+}
+img {
+  max-width: 200px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  width: 75vw;
+  margin: 0 auto;
+}
+.grid .grid-container {
+  position: relative;
+  background: white;
+  border: 1px solid grey;
+  height: 300px;
+  max-height: 300px;
+  min-height: 300px;
+  overflow: hidden;
+  overflow-y: auto;
+  line-height: 1.2;
+  border-radius: px;
+}
+a {
+  text-decoration: none;
+  border-bottom: 1px solid grey;
+  display: block;
+  padding: 3px;
+  color: black;
+}
+a:visited {
+   color: initial;
+}
+.header {
+  display: block;
+  padding: 3px;
+  background: lightgrey;
+}
+a.bottom {
+  display: inline-block;
+  border-bottom: none;
+  line-height: 0.5;
+  color: green;
+}
+@media (max-width: 1000px) {
+   .grid {
+     grid-template-columns: repeat(2, 1fr);
+   }
+   .footer {
+     width: 40vw;
+     font-size: 11px;
+   }
+}
+@media (max-width: 600px) {
+   .grid {
+     grid-template-columns: repeat(1, 1fr);
+  }
+   .footer {
+     width: 50vw;
+     font-size: 10px;
+   }
+}
+.block {
+  position: relative;
+  background-color: black;
+  height: 300px;
+  min-height: 300px;
+  max-height: 300px;
+  overflow: hidden;
+  overflow-y: auto;
+  line-height: 1.2;
+}
+.random-image {
+  background-size: cover;
+  background-position: center center;
+}

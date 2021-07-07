@@ -1,0 +1,42 @@
+body {
+  background: black;
+  margin: 1em;
+}
+#outer-container {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+#cloud-container {
+  display: flex;
+  flex-direction: row;
+  align-content: normal;
+  justify-content: flex-start;
+  align-items: center;
+  height: 90vh;
+  margin: 0;
+}
+img {
+  height: 85vh;
+  margin-right: 1em;
+  padding 0;
+}
+#buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+a {
+  color: black;
+  background: white;
+  padding: 5px;
+  border: 1px solid white;
+  margin-right: 0.4em;
+  border-radius: 5px;
+  text-decoration: none;
+}
+a.active {
+  color: white;
+  background: black;
+  border: 1px solid white;
+}

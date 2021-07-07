@@ -61,7 +61,7 @@ a.bottom {
   display: inline-block;
   border-bottom: none;
   line-height: 0.5;
-  color: green;
+  color: black;
 }
 @media (max-width: 1000px) {
    .grid {

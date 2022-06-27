@@ -1,4 +1,4 @@
-body {
+body, p, h4, pre {
   margin: 0;
 }
 #main {
@@ -16,8 +16,4 @@ a:hover {
 }
 pre {
   font-family: Times New Roman, Times, serif;
-  width: 400px;
-}
-p, h4, pre {
-  margin: 0;
 }
